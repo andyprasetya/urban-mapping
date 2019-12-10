@@ -7289,17 +7289,17 @@ a.navbar-item:hover {
 #modal:target {
   display: flex; }
 
-.button {
+#footer-controls .button {
   min-width: 9rem;
   box-shadow: 0 0 0 0.05rem white; }
 
-#d {
+#footer-controls #d {
   border-left: 1px solid gray; }
 
 @media (max-width: 512px) {
-  #e {
+  #footer-controls #e {
     border-left: 1px solid gray; }
-  .button {
+  #footer-controls .button {
     min-width: 9.5rem; } }
 
 

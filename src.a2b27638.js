@@ -607,12 +607,12 @@ var showControls = function showControls() {
 
 var hideControls = function hideControls() {
   return info.style.animationName = "vanishToBottom";
-}; // window.addEventListener("resize", function() {
-//   let vh = window.innerHeight * 0.01;
-//   document.documentElement.style.setProperty("--vh", `${vh}px`);
-// });
-// showControls();
+};
 
+window.addEventListener("resize", function () {
+  var vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", "".concat(vh, "px"));
+}); // showControls();
 
 showInfo();
 showHeader();
@@ -836,7 +836,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57079" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58743" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

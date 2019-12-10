@@ -607,13 +607,12 @@ var showControls = function showControls() {
 
 var hideControls = function hideControls() {
   return info.style.animationName = "vanishToBottom";
-}; // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+}; // window.addEventListener("resize", function() {
+//   let vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty("--vh", `${vh}px`);
+// });
+// showControls();
 
-
-var vh = window.innerHeight * 0.01; // Then we set the value in the --vh custom property to the root of the document
-
-var vhValue = document.documentElement.style.getPropertyValue("--vh");
-if (vhValue) document.documentElement.style.setProperty("--vh", "".concat(vh, "px")); // showControls();
 
 showInfo();
 showHeader();
@@ -837,7 +836,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63325" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63390" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

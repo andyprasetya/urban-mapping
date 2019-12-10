@@ -7232,9 +7232,6 @@ body {
   position: relative;
   background: url("/bg-desktop.9ab09ccb.jpg") center/cover !important;
   overflow: hidden; }
-  @media (max-width: 512px) {
-    body {
-      height: calc(var(--vh, 1vh) * 100); } }
 
 @media (max-width: 768px) {
   :root {

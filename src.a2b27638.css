@@ -7291,7 +7291,7 @@ a.navbar-item:hover {
 
 #footer-controls .button {
   min-width: 9rem;
-  box-shadow: 0 0 0 0.05rem white; }
+  box-shadow: 0 0 0 0.1rem white; }
 
 #footer-controls #d {
   border-left: 1px solid gray; }

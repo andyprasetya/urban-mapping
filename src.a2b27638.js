@@ -690,25 +690,7 @@ setTimeout(function () {
 
 function onStyleChanged(style) {
   labelsLayerId = (0, _utils.getLabelsLayer)(style);
-} // const switchDataLayers = createDataLayersSwitcher(map, currentDataLayers);
-// function switchDataLayers(id) {
-//   for (let l of currentDataLayers) map.removeLayer(l);
-//   currentDataLayers = [];
-//   const heatId = loadHeatLayer(
-//     map,
-//     labelsLayerId,
-//     `heat-${id}`,
-//     `points-${id}`
-//   );
-//   const circlesId = loadCircleLayer(
-//     map,
-//     `heat-${id}`,
-//     `points-${id}`,
-//     `points-${id}`
-//   );
-//   currentDataLayers = currentDataLayers.concat([heatId, circlesId]);
-// }
-
+}
 
 var baseMapTogglers = document.getElementsByClassName("basemap-toggle");
 var prevStyleId;
@@ -812,8 +794,7 @@ try {
     var _t = _step4.value;
 
     _t.addEventListener("click", toggleDataLayer);
-  } // function toggleDataLayer
-
+  }
 } catch (err) {
   _didIteratorError4 = true;
   _iteratorError4 = err;
@@ -856,7 +837,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60421" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61922" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
